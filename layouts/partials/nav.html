@@ -1,0 +1,11 @@
+<nav>
+	<ul>
+		<li>Squarespace Sux</li>
+	</ul>
+	<ul>
+		{{ $color := .Scratch.Get "color" }} {{ range .Site.Data.navigation.header
+		}}
+		<li><a href="{{ .url }}" style="color: {{ $color }}">{{ .name }}</a></li>
+		{{ end }}
+	</ul>
+</nav>

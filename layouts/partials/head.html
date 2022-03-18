@@ -1,0 +1,15 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{ $pico := resources.Get "scss/pico.scss" | resources.ToCSS }}
+  {{ $flexbox :=
+    resources.Get "css/flexbox-grid.css"
+  }}
+  {{ $title := print .Site.Title " | "
+    .Title
+  }}
+  {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+  <link rel="stylesheet" href="{{ $pico.RelPermalink }}" />
+  <link rel="stylesheet" href="{{ $flexbox.Permalink }}" />
+  <title>{{ $title }}</title>
+</head>
