@@ -5,6 +5,9 @@ header:
     url: /about/
   - name: Blog
     url: /blog/
+  - name: Elements
+    title: Elements
+    url: /elements/
   - name: Contact
     url: /contact/
 
