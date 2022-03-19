@@ -2,5 +2,6 @@ baseURL: http://squarespace-sucks.org
 languageCode: en-us
 title: Squarespace Sucks
 Params:
-  slogan: Why pay for ugly modern web design when you can do it yourself for free?
+  subtitle: Why pay for ugly modern web design when you can do it yourself for free?
   colorpop: Squarespace’s templates are flexible and easy to use, and serve as a great foundation for your online business. NOT!
+
