@@ -41,21 +41,3 @@
 @import "utilities/accessibility"; // -ms-touch-action, aria-*
 @import "utilities/reduce-motion"; // prefers-reduced-motion
 
-// Custom
-@import "custom/hero";
-@import "custom/nav";
-@import "custom/color-pop";
-@import "custom/blog";
-@import "custom/theme-switcher";
-body > header {
-  padding: 0;
-}
-
-.content {
-	padding: 5rem 3rem;
-}
-
-time {
-display: inline-block;
-margin-bottom: 1rem;
-}

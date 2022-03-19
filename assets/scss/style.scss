@@ -1,0 +1,44 @@
+@import "pico";
+
+// Custom
+@import "custom/hero";
+@import "custom/nav";
+@import "custom/color-pop";
+@import "custom/blog";
+@import "custom/theme-switcher";
+@import "custom/customization";
+
+body > header {
+  padding: 0;
+}
+
+.content {
+	padding: 5rem 3rem;
+}
+
+time {
+display: inline-block;
+margin-bottom: 1rem;
+}
+
+@font-face {
+	font-family: Granville;
+	src: url("/fonts/Granville Regular.otf") format("opentype");
+}
+
+// Commons Styles
+:root {
+  // Typography
+  --font-family: "Granville", "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --font-weight: 500;
+}

@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {{ $pico := resources.Get "scss/pico.scss" | resources.ToCSS }}
+  {{ $style := resources.Get "scss/style.scss" | resources.ToCSS }}
   {{ $flexbox :=
     resources.Get "css/flexbox-grid.css"
   }}
@@ -9,8 +9,9 @@
     .Title
   }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
-  <link rel="stylesheet" href="{{ $pico.RelPermalink }}" />
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
   <link rel="stylesheet" href="{{ $flexbox.Permalink }}" />
   <script defer src="/js/theme-switcher.js"></script>
+  <script defer src="/js/customization.js"></script>
   <title>{{ $title }}</title>
 </head>
