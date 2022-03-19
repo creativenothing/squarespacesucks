@@ -1,0 +1,27 @@
+#blog a {
+  text-decoration: none;
+	--color: var(--color);
+}
+
+#blog small {
+  text-decoration: underline;
+}
+#blog ul {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+#blog li {
+  padding: 1rem;
+  list-style-type: none;
+}
+
+#blog img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  margin-bottom: 3rem;
+}
+
+
+
