@@ -11,5 +11,6 @@
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   <link rel="stylesheet" href="{{ $pico.RelPermalink }}" />
   <link rel="stylesheet" href="{{ $flexbox.Permalink }}" />
+  <script defer src="/js/theme-switcher.js"></script>
   <title>{{ $title }}</title>
 </head>
