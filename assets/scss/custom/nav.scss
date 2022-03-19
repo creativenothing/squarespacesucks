@@ -5,3 +5,11 @@ nav {
   right: 1rem;
 }
 
+nav a {
+	--color: var(--color);
+}
+
+nav.home a {
+	--color: #fff;
+}
+

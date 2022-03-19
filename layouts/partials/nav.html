@@ -1,11 +1,10 @@
-<nav>
+<nav {{ if .IsHome }}class="home"{{ end }}>
   <ul>
-    <li>Squarespace Sux</li>
+    <li><a href="/">Squarespace Sux</a></li>
   </ul>
   <ul>
-    {{ $color :=cond (.IsHome) "#fff" "#000" }}
     {{ range .Site.Data.navigation.header }}
-      <li><a href="{{ .url }}" style="color: {{ $color }}">{{ .name }}</a></li>
+      <li><a href="{{ .url }}">{{ .name }}</a></li>
     {{ end }}
   </ul>
 </nav>
