@@ -4,7 +4,7 @@
       <h1>{{ .Title }}</h1>
       <ul class="row">
         {{ range .Pages.ByPublishDate.Reverse }}
-          <li class="col-xs-12 col-sm-6 col-lg-4">
+          <li class="col-xs-12 col-md-6 col-lg-4">
             <a href="{{ .RelPermalink }}">
               <img src="/img/{{ .Params.image }}" alt="" />
               {{ $dateTime := .Date.Format "01/02/2006" }}
