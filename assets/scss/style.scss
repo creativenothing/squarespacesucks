@@ -8,6 +8,25 @@
 @import "custom/theme-switcher";
 @import "custom/customization";
 
+$include-column-box-sizing: true;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins/lists";
+@import "bootstrap/mixins/breakpoints";
+@import "bootstrap/mixins/grid";
+@import "bootstrap/mixins/utilities";
+@import "bootstrap/vendor/rfs";
+@import "bootstrap/grid";
+
 body > header {
   padding: 0;
 }

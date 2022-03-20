@@ -2,19 +2,17 @@
 	background-color: #14684e;
 }
 
-#color-pop > div {
-	margin-left: auto;
-	margin-right: auto;
-	padding: 4rem 2rem;
-	display: flex;
-	align-items: center;
-	gap: 2rem;
-	max-width: 900px;
+
+#color-pop .row {
+align-items: center;
+justify-content: center;
+padding: 6rem 3rem;
+max-width: 1000px;
 }
 
 #color-pop img {
-	height: 50vh;
-	width: 40vw;
+	height: 100%;
+	aspect-ratio: 3/4;
 	object-fit: cover;
 	object-position: 30%;
 	animation: fadeInAnimation ease 2s;
