@@ -1,0 +1,3 @@
+---
+hasCover: true
+---

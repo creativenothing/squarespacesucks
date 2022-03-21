@@ -1,6 +1,6 @@
 ---
-title: "Free Open Source Software"
-subtitle: It's great
+title: "No Scripts, No Trackers"
+subtitle: Just pure, unadulterated content.
 date: 2022-03-18T14:18:03-04:00
 draft: false
 image: green2.jpg

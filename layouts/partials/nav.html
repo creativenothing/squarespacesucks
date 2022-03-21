@@ -1,10 +1,14 @@
-<nav {{ if .IsHome }}class="home"{{ end }}>
+<nav {{ if .Page.Params.hasCover }}class="nav-cover"{{ end }}>
   <ul>
-    <li><a href="/">Squarespace Sux</a></li>
+    <li class="brand"><a href="/">Squarespace Sux</a></li>
   </ul>
   <ul>
-    {{ range .Site.Data.navigation.header }}
-      <li><a href="{{ .url }}">{{ .name }}</a></li>
+    {{ $current := . }}
+    {{ range .Site.Data.navigation.nav }}
+      {{ $active := in $current.RelPermalink .url }}
+      <li {{ if $active }}class="active"{{ end }}>
+        <a href="{{ .url }}">{{ .name }}</a>
+      </li>
     {{ end }}
   </ul>
 </nav>

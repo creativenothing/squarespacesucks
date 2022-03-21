@@ -1,6 +1,6 @@
 ---
 title: "Modern Web Design is Ugly"
-subtitle: Why is that?
+subtitle: Stop the nightmare.
 date: 2022-03-16T14:18:03-04:00
 draft: false
 image: green4.jpg

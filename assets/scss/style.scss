@@ -32,7 +32,7 @@ body > header {
 }
 
 .content {
-	padding: 5rem 3rem;
+	padding: 5rem;
 	max-width: 1400px;
 	margin: auto;
 }
@@ -62,4 +62,22 @@ h4,
 h5,
 h6 {
   --font-weight: 500;
+}
+
+.cover {
+	background: no-repeat cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
+#about {
+	& h1, h2, h3, h4 {
+		color: white;
+	}
+	& p {
+		color: white;
+	}
 }

@@ -1,15 +1,25 @@
 nav {
   position: absolute;
   top: 0;
-  left: 1rem;
-  right: 1rem;
+  left: 0;
+  right: 0;
+	padding: 1rem 2rem 0;
 }
 
 nav a {
 	--color: var(--color);
 }
 
-nav.home a {
+nav.nav-cover a {
 	--color: #fff;
 }
 
+nav li.active {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+nav a:active, nav a:focus, nav a:hover {
+	font-weight: 600;
+	background-color: transparent;
+}

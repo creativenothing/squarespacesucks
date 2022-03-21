@@ -1,4 +1,2 @@
-<header>
-  {{ partial "nav.html" . }}
-  {{ if .IsHome }}{{ partial "hero.html" . }}{{ end }}
-</header>
+{{ partial "nav.html" . }}
+{{ if .IsHome }}{{ partial "hero.html" . }}{{ end }}

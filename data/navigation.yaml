@@ -1,6 +1,4 @@
-header:
-  - name: Home
-    url: /
+nav:
   - name: About
     url: /about/
   - name: Blog
