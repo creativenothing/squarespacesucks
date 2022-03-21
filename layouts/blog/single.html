@@ -1,0 +1,34 @@
+{{ define "main" }}
+  <div class="content">
+    {{ $dateTime := .Date.Format "Jan 1, 2006" }}
+    <time datetime="{{ $dateTime }}">{{ $dateTime }}</time>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <div class="blog-item-pagination">
+      <div>
+        {{ with .NextInSection }}
+          <svg class="caret-left" viewBox="0 0 9 16">
+            <polyline
+              fill="none"
+              stroke-miterlimit="10"
+              points="7.3,14.7 2.5,8 7.3,1.2"
+            ></polyline>
+          </svg>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ end }}
+      </div>
+      <div>
+        {{ with .PrevInSection }}
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <svg class="caret-right" viewBox="0 0 9 16">
+            <polyline
+              fill="none"
+              stroke-miterlimit="10"
+              points="1.6,1.2 6.5,7.9 1.6,14.7"
+            ></polyline>
+          </svg>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}

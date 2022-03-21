@@ -1,14 +1,14 @@
 #blog a {
   text-decoration: none;
-	--color: var(--color);
+  --color: var(--color);
 }
 
 #blog small {
   text-decoration: underline;
 }
 #blog ul {
-max-width: 1200px;
-margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #blog li {
@@ -23,5 +23,32 @@ margin: 0 auto;
   margin-bottom: 3rem;
 }
 
+.blog-item-pagination {
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem 0;
+	& > div {
+		display: flex;
+		align-items: center;
+	}
+  & a {
+	  --color: var(--color);
+		font-size: 1.5rem;
+		font-weight: 500;
+  }
+  & svg {
+		display: block;
+    stroke: var(--color);
+    width: 2rem;
+    height: 2rem;
+  }
 
-
+	& .caret-left {
+		margin-right: 1rem;
+	}
+	& .caret-right {
+		margin-left: 1rem;
+	}
+}
