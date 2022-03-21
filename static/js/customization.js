@@ -2,7 +2,7 @@
 !(function () {
   const e = {
     colors: null,
-    buttonsTarget: '#customization article',
+    buttonsTarget: '#customization > article',
     selectorButton: '#customization button[data-color]',
     selectorSection: '#customization',
     buttons: null,

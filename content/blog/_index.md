@@ -1,3 +1,3 @@
 ---
-title: Squaresace Sux
+title: Squaresace Sux Blog
 ---

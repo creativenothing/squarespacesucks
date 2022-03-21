@@ -1,3 +1,6 @@
+#blog h1 {
+	text-align: center;
+}
 #blog a {
   text-decoration: none;
   --color: var(--color);
@@ -7,7 +10,7 @@
   text-decoration: underline;
 }
 #blog ul {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -20,7 +23,7 @@
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .blog-item-pagination {
