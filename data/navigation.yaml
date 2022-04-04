@@ -3,8 +3,6 @@ nav:
     url: /about/
   - name: Blog
     url: /blog/
-  - name: Contact
-    url: /contact/
 
 footer:
   - name: Home
